@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>VertCenter</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content no-bounce text-center [ngClass]="{'align-vertical': alignvertical}">
+  <ion-grid [ngClass]="{'justifycentergrid': !alignvertical}">
+    <ion-row>
+      <ion-col col-12>
+        <div class="wrapper">
+          <div style="height: 50px; width: 100%;"></div>
+        </div>
+        <component-login></component-login>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer no-shadow text-center>
+    <button ion-button clear small class="join" (toggle)="toggleverticalclass()">toggle </button>
+</ion-footer>
+

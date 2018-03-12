@@ -1,0 +1,150 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+/*
+  ELECTRIC KIWI - BRAND COLOURS
+*/
+$white:       #FFFFFF;
+$black:       #000000;
+$yellow:      #FFD400;
+$light-yellow:#FFE566;
+$lightest-yellow : #FFFBE5;
+$dark-grey:   #333132;
+$light-grey:  #C2C1C1;
+$lightest-grey: #F5F4F5;
+$ios-grey:    #F8F8F8;
+$card-grey:   #F5F4F5;
+$grey:        #858384;
+$green:       #63C452;
+$purple:      #982EE8;
+$teal:          #0074A6;
+$red:           #CC0000;
+$light-green:  #4BD964;
+$lightest-green: #A1DC97;
+
+$blue:          #0074A6;
+$light-blue:  #66ACCA;
+$lightest-blue:    #B2D5E4;
+$lightests-blue: #E5F1F6;
+
+
+
+$border-light: 0.55px solid rgba(0,0,0,0.1);
+$border-dark: 0.55px solid rgba(0,0,0,0.20);
+
+$colors: (
+
+  primary: $yellow,
+  secondary: $blue,
+  tertiary: $teal,
+  danger: $red,
+  light: $light-grey,
+  dark: $dark-grey,
+  yellow: $yellow,
+  teal: $teal,
+  green: $green,
+  blue: $blue,
+  lightblue: $lightest-blue,
+  loginbtn: $light-blue,
+  toggle: $light-green,
+  whitebutton: $white
+);
+
+$font-size-base: 18px;
+$font-small: 1.2rem;
+
+$animation-enter: cubic-bezier(0,.68,.34,1);
+$animation-leave: cubic-bezier(1,.34,0,.68);
+
+$icon-tab-ek-home: '../assets/icon/home.svg';
+$icon-tab-ek-insight: '../assets/icon/insight.svg';
+$icon-tab-ek-account: '../assets/icon/kiwi.svg';
+$icon-tab-ek-more: '../assets/icon/more.svg';
+
+$icon-header-ek-logo: '../assets/icon/kiwi.svg';
+$icon-header-ek-address: '../assets/icon/house_blue.svg';
+$icon-header-ek-support: '../assets/icon/support.svg';
+
+$icon-ek-close: '../assets/icon/close.svg';
+$icon-ek-arrow-blue: '../assets/icon/arrow_blue.svg';
+$icon-ek-arrow-yellow: '../assets/icon/arrow_yellow.svg';
+$icon-ek-checked: '../assets/icon/checked.svg';
+
+$icon-ek-address-blue: '../assets/icon/house_blue.svg';
+$icon-ek-address-green: '../assets/icon/house_green.svg';
+$icon-ek-address-red: '../assets/icon/house_red.svg';
+$icon-ek-address-yellow: '../assets/icon/house_yellow.svg';
+
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+$alert-ios-button-text-color: $blue;
+$picker-ios-button-text-color:$blue;
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+$alert-md-button-text-color: $blue;
+$picker-md-button-text-color:$blue;
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+$ionicons-font-path: "../assets/fonts";
+// @import "ionic.ionicons";
+@import "ionicons";

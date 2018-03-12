@@ -1,0 +1,12 @@
+<form>
+  <ion-list no-lines>
+    <ion-item text-center>
+      <ion-input type="email" placeholder="name" name="email" ></ion-input>
+    </ion-item>
+    <ion-item text-center>
+      <ion-input type="password" placeholder="pwd" name="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button (click)="login()"  color="loginbtn">Login</button>
+  <a (click)="forgotPassword()" class="forgot small">Forgot Password</a>
+</form>

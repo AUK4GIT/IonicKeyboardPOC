@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Keyboard POC
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <button ion-button (click)="presentLoginWithoutVerticalAlign()">Normal</button><br/>
+  <button ion-button (click)="presentLogin()">.align-vertical</button><br/>
+  <button ion-button (click)="presentVertCenter2()">.bottomzeropadding</button><br/>
+  <button ion-button (click)="presentVertCenter1()">.align-vertical + .bottomzeropadding</button><br/>
+  <button ion-button (click)="presentVertCenter4()">.justifycentergrid + .bottomzeropadding</button><br/>
+  <button ion-button (click)="presentVertCenter3()">.align-vertical +  .justifycentergrid+ .bottomzeropadding</button><br/>
+  <!-- <p [innerHtml]="htmlstring"></p>
+  <p [innerHtml]="CSS"></p> -->
+</ion-content>

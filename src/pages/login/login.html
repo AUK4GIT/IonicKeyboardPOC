@@ -1,0 +1,16 @@
+<ion-content no-bounce text-center [ngClass]="{'align-vertical': alignvertical, 'bottom-padding-zero-scrollcontent': bottomzeropadding}">
+  <ion-grid [ngClass]="{'justifycentergrid': vertaligngrid}">
+    <ion-row>
+      <ion-col col-12>
+        <div class="wrapper">
+          <div style="height: 50px; width: 100%; background-color: grey;"></div>
+        </div>
+        <component-login></component-login>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+<ion-footer no-shadow text-center>
+    <button ion-button clear small (click)="join()" class="join">join </button>
+</ion-footer>
+

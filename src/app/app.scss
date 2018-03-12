@@ -1,0 +1,485 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+// @import "../theme/icons";
+
+body {
+  letter-spacing: -0.01em;
+  font-smoothing: antialiased;
+  font-kerning: normal;
+  background-color: $lightest-blue;
+}
+
+
+div,
+p {
+  font-size: $font-size-base;
+  letter-spacing: -0.01em;
+  line-height: 1.22em;
+
+  em {
+    font-style: normal;
+    font-family: 'filsonsoft_book_it'
+  }
+}
+
+small {
+  font-size:12px;
+  letter-spacing: -0.01em;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+ion-title,
+ion-card-header {
+  font-family: 'filsonsoft_medium';
+
+  em {
+    font-family: 'filsonsoft_medium_it';
+    font-style: normal;
+  }
+}
+
+ion-toast.toast-white {
+  .toast-wrapper,
+  .toast-wrapper {
+    background-color: $white;
+    box-shadow: 0 0.55px 5px rgba($light-grey, 0.3);
+
+    .toast-message {
+      font-size: 16px;
+      color: $dark-grey;
+    }
+    .toast-button {
+      font-size:16px;
+      color: $blue;
+    }
+  }
+}
+// ion-toast.toast-teal {
+//   .toast-md .toast-wrapper,
+//   .toast-ios .toast-wrapper {
+//     background-color: $teal;
+//   }
+// }
+
+.toolbar-title-ios,
+.toolbar-title-md,
+ion-title {
+  font-size:28px;
+  font-weight: 500;
+}
+
+button,
+.button-ios,
+.button-md {
+  font-size:18px;
+  letter-spacing: -0.01em;
+  font-kerning: normal;
+  text-transform: none;
+  white-space: normal;
+  height: auto;
+  padding: 10px;
+  line-height: 1.2em;
+  // .button-inner {
+  //   padding-top: 5px;
+  // }
+}
+
+.item-ios h5,
+.item-md h5,
+h5 {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.align-vertical > * {
+  display: flex!important;
+  align-content: center!important;
+  align-items: center!important;
+}
+
+.toolbar-md {
+  padding:0;
+  min-height:44px;
+}
+.toolbar-title-md,
+.toolbar-title-ios {
+  font-size:28px;
+  padding:0 0 0 13px;
+}
+
+.md .ion-page > [has-header] > ion-refresher,
+.ios .ion-page > [has-header] > ion-refresher,
+.md .ion-page > [has-header] > .scroll-content,
+.ios .ion-page > [has-header] > .scroll-content {
+  margin-top: 44px;
+}
+
+.ion-page > [has-contentheader] > .scroll-content, ion-menu .menu-inner > [has-contentheader] > .scroll-content {
+  margin-top: 94px;
+}
+
+
+.md .modal-wrapper,
+.ios .modal-wrapper {
+  -webkit-transform: none;
+  transform: none;
+  opacity: 1;
+}
+
+
+.card-container,
+.card-ios,
+.card-md {
+  margin: 0px;
+  border-radius: 0px;
+  width: 100%;
+  font-size: 1.4rem;
+  background: $card-grey;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-top: $border-light;
+  border-bottom: $border-dark;
+
+  .card-header,
+  .card-header-md,
+  .card-header-ios {
+    font-size:28px;
+    text-align: left;
+    color: $black;
+    line-height: 1.22em;
+    padding-top: 20px;
+  }
+
+  h2 {
+    font-size:18px;
+  }
+
+  ion-label,
+  p {
+    font-size:18px;
+    color: $dark-grey;
+    line-height: 1.22em;
+  }
+  .card-content-md,
+  .card-content-ios {
+    padding-bottom: 20px;
+  }
+
+
+  &.full-height {
+    background-color: $lightest-grey;
+    border: 0;
+    min-height: calc(100%);
+
+    .card-header-md,
+    .card-header-ios {
+      white-space: normal;
+      text-overflow: initial;
+      line-height: 1.22em;
+      border-bottom: $border-light;
+      font-size: 18px;
+      font-weight: normal;
+      background-color: $white;
+      margin:0;
+      padding: 20px 13px 20px;
+      font-family: 'filsonsoft_book';
+    }
+
+    .card-content-md,
+    .card-content-ios {
+      padding-top:16px;
+    }
+  }
+}
+
+
+
+.item-textarea,
+ion-textarea,
+textarea,
+.item-input,
+ion-input,
+input {
+  background-color: $white;
+  border-radius: 3px;
+  font-size:18px;
+  color: $dark-grey;
+
+  ion-label {
+    font-size:16px;
+    padding:0;
+  }
+
+  .label-ios,
+  .label-md {
+    margin: 11px 0px 11px 0;
+  }
+}
+
+.text-textarea-md
+textarea {
+  margin: 13px 8px;
+  padding: 0;
+  width: calc(100% - 8px - 8px);
+}
+
+.button-md-white,
+.button-ios-white,
+.button-md-whitebutton.width100,
+.button-ios-whitebutton.width100,
+.button-md-whitebutton,
+.button-ios-whitebutton {
+  border:1px solid #C2C1C1;
+  border-radius: 3px;
+  min-width:100px;
+  min-height: 50px;
+  text-transform: none;
+}
+.button-md-whitebutton.width100,
+.button-ios-whitebutton.width100 {
+  min-width:none;
+  width:100%;
+}
+.button-md-whitebutton.width160,
+.button-ios-whitebutton.width160 {
+  min-width:160px;
+  width:160px;
+}
+
+// ICONS
+.ion-ios-ek-close,
+.ion-md-ek-close {
+  width:45px;
+  height:45px;
+  padding:0;
+  content: url($icon-ek-close);
+}
+
+.ion-ios-ek-checked,
+.ion-md-ek-checked {
+  width:45px;
+  height:45px;
+  padding:0;
+  content: url($icon-ek-checked);
+}
+
+.ion-ios-ek-arrow-blue,
+.ion-md-ek-arrow-blue {
+  width:45px;
+  height:45px;
+  padding:0;
+  content: url($icon-ek-arrow-blue);
+}
+.ion-ios-ek-arrow-blue.down,
+.ion-md-ek-arrow-blue.down {
+  transform: rotate(180deg);
+}
+
+.ion-ios-ek-arrow-yellow,
+.ion-md-ek-arrow-yellow {
+  width:45px;
+  height:45px;
+  padding:0;
+  content: url($icon-ek-arrow-yellow);
+}
+.ion-ios-ek-arrow-yellow.right,
+.ion-md-ek-arrow-yellow.right {
+  transform: rotate(180deg);
+}
+
+.ion-ios-ek-add,
+.ion-md-ek-add {
+  width:45px;
+  height:45px;
+  padding:0;
+  content: url($icon-ek-close);
+  transform: rotate(45deg);
+}
+
+
+.ion-ios-ek-right,
+.ion-md-ek-right,
+.ion-ios-ek-address-green,
+.ion-md-ek-address-green,
+.ion-ios-ek-address-yellow,
+.ion-md-ek-address-yellow,
+.ion-ios-ek-address-red,
+.ion-md-ek-address-red,
+.ion-ios-ek-address-blue,
+.ion-md-ek-address-blue {
+  width:45px;
+  height:45px;
+  padding:0;
+  content: url($icon-ek-address-blue);
+}
+
+.ion-ios-ek-address-green,
+.ion-md-ek-address-green {
+  content: url($icon-ek-address-blue);
+}
+
+.ion-ios-ek-address-yellow,
+.ion-md-ek-address-yellow {
+  content: url($icon-ek-address-yellow);
+}
+
+.ion-ios-ek-address-red,
+.ion-md-ek-address-red {
+  content: url($icon-ek-address-red);
+}
+
+.ion-ios-ek-right,
+.ion-md-ek-right {
+  content: url($icon-ek-arrow-blue);
+  transform: rotate(90deg);
+}
+
+// GLOBAL ITEM STYLES
+
+.item-ios,
+.item-md {
+  padding:0;
+
+  .item-inner {
+    padding-left:13px;
+    font-size: 18px;
+  }
+
+}
+
+ion-item.item-block:first-child,
+.list-md > .item-block:first-child,
+.list-ios > .item-block:first-child {
+  border-top: $border-light;
+}
+
+.list-md > .item-block:last-child,
+.list-md > .item-wrapper:last-child .item-block,
+.list-md .item-block .item-inner,
+.list-ios > .item-block:last-child,
+.list-ios > .item-wrapper:last-child .item-block,
+.list-ios .item-block .item-inner {
+  border-bottom: $border-light;
+}
+
+.item-ios[detail-push] .item-inner,
+.item-md[detail-push] .item-inner {
+  background:none;
+  padding-right: 0px;
+
+  &:after {
+    content: ' ';
+    width: 45px;
+    height: 40px;
+    background: transparent url($icon-ek-arrow-blue) no-repeat 0 0;
+    background-position: left 0px center;
+    // background-repeat: no-repeat;
+    transform: rotate(90deg);
+  }
+}
+
+
+// REMOVE THE md BOTTOM STROKES
+.list-md .item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child,
+.list-md .item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus):last-child,
+.item-md.item-input.ng-valid.item-input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+.item-md.item-input.ng-valid.input-has-value:not(.input-has-focus):not(.item-input-has-focus) .item-inner,
+.item-md.item-input.item-input-has-focus .item-inner,
+.item-md.item-input.input-has-focus .item-inner,
+.list-md .item-input.input-has-focus,
+.list-md .item-input.item-input-has-focus:last-child,
+.list-md .item-input.input-has-focus:last-child,
+.list-md .item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus):last-child,
+.item-md.item-block .item-inner,
+.list-md .item-block .item-inner,
+.list-md .item-input:last-child,
+.item-md.item-input.ng-invalid.ng-touched:not(.input-has-focus):not(.item-input-has-focus) .item-inner {
+  border:0;
+  box-shadow:none;
+}
+
+.header-md::after,
+.tabs-md[tabsPlacement="top"] > .tabbar::after,
+.tabs-md[tabsPlacement="bottom"] > .tabbar::before,
+.footer-md::before {
+  background:none;
+}
+.header-md::after,
+.tabs-md[tabsPlacement="top"] > .tabbar::after,
+.tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+  border-bottom: 0.55px solid rgba(0, 0, 0, 0.3);
+  height:1px;
+  bottom:-1px;
+}
+
+
+
+
+/* ION CARDS */
+.card-content.card-content-md,
+.card-content.card-content-ios,
+ion-card-content {
+
+  .label-md,
+  .label-ios {
+    margin:0;
+  }
+
+}
+
+
+.content-group {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom:0;
+  }
+}
+
+.page-content{
+    background-color: $card-grey;
+}
+.no-bottom-border{
+  	border-bottom: none;
+}
+
+.toggle-ios {
+  display: block; // for ios theme or mode
+}
+
+.toggle-md {
+  display: block; // just in case if you use md in ios device
+}
+
+.menu-inner {
+  width: calc(100% - 16px);
+  transform: translateX(calc(100% - 16px));
+  transform: initial 0px;
+}
+
+@media (min-width: 768px){
+  .menu-inner {
+    width: 320px;
+    transform: translateX(320px);
+    transform: initial 0px;
+  }
+}

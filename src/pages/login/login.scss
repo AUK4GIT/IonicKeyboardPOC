@@ -1,0 +1,128 @@
+page-login  {
+
+    ion-content,
+    .content-ios,
+    .content-md {
+      background-color: $lightest-blue;
+    }
+  
+    .wrapper {
+      position:relative;
+      margin-top: 100px;
+      margin-bottom:40px;
+  
+      .animation-welcome {
+        position:absolute;
+        top: -190px;
+        left: calc(50% - 50%);
+        width:100%;
+      }
+  
+    }
+  
+  
+    .join {
+      font-size: 18px;
+      color: $blue;
+      float:right;
+      width: 80px;
+  
+    }
+  
+    component-login {
+  
+      background-color: $lightest-blue;
+  
+      form {
+        width:65%;
+        margin: 0 auto;
+      }
+  
+      .list-ios,
+      .list-md {
+        margin:0;
+      }
+  
+      .list-ios > .item-block:last-child {
+        border:0;
+      }
+  
+      .item-md.item-block .item-inner,
+      .item-ios.item-block .item-inner {
+        padding:0;
+      }
+  
+      .item-ios,
+      .item-md {
+        background-color: $lightest-blue;
+        padding:0;
+        margin:0;
+  
+        .text-input-ios,
+        .text-input-md {
+          margin: 11px 8px;
+          width: calc(100% - 16px);
+        }
+  
+        ion-input,
+        input {
+          text-align: center;
+          color: $black;
+        }
+  
+        ion-input {
+          margin-bottom: 20px;
+          box-shadow: 0 0.5px 0 rgba(0,0,0, 0.16);
+        }
+  
+        input::-webkit-input-placeholder {
+           color:    $dark-grey;
+           opacity:  1;
+        }
+  
+        input:-moz-placeholder,
+        input::-moz-placeholder,
+        input:-ms-input-placeholder,
+        input::-ms-input-placeholder,
+        input::placeholder {
+           color:    $dark-grey;
+           opacity:  1;
+        }
+  
+      }
+  
+      .button {
+        width: 100%;
+        font-size:18px;
+        border: 1px solid $light-grey;
+        margin:10px 0 15px;
+        box-shadow: 0 0.5px 0 rgba(0,0,0, 0.16);
+        height:2.5em;
+        color: $black;
+        background-color:$yellow;
+      }
+  
+      .forgot {
+        font-size:18px;
+        color: $blue;
+      }
+  
+      [ion-button][disabled] {
+        opacity: 1;
+        border: 1px solid $light-grey;
+        background-color:$lightest-blue;
+      }
+    }
+  
+    ion-grid{
+      background-color: cadetblue;
+    }
+    .bottom-padding-zero-scrollcontent .scroll-content { 
+      padding-bottom: 0!important; 
+    }
+    .justifycentergrid {
+      height: 100%;
+      justify-content: center;
+    }
+  }
+  
